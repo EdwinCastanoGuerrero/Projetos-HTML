@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/*=====================================================================*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+body{
+    background-image:url(imagens/anel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*=====================================================================*/
+header{  
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+}
+
+/*=====================================================================*/
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    box-shadow: 1px 1px 4px #202020;
+    padding-bottom: 18px;
+
+}
+
+.logo{
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    
+    
+}
+.nav-itens {
+    list-style: none;
+    display: flex;
+
+}
+.nav-itens > li > a {
+    padding-left: 35px;
+    color: #202020;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.nav-itens > li > a::after{
+    content: '';
+    position: absolute;
+    left: 24px;
+    bottom: -5px;
+    width: 90%;
+    height: 3px;
+    background-color: #202020;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .2s;
+    
+}
+
+.nav-itens > li > a:hover::after{
+    transform: scaleX(1);
+}
+
+
+.btn{
+    background-size: cover;
+    justify-content: right;
+}
+
+.login{
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    color: #202020;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    font-weight: bolder;
+    background-color: #ffffff10;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.login:hover{
+    background-color: #ffffff80;
+    color: #202020;
+}
+.cadastro{
+    padding: 10px 25px;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    font-size:medium;
+    font-weight: bolder;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    background-color: #000000c9;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.cadastro:hover{
+    background-color: #ffffff95;
+    color: #202020;
+
+}
+
+section {
+    padding: 100px 200px;
+    margin-top: -100px;
+}
+
+footer{
+    margin: 0px;
+    background-color: #ffffff10;
+    box-shadow: 1px 1px 6px #202020c0;
+}
+.rodape {
+    padding: 5px;
+    border-top: 0.4px solid #202020;
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+/*=====================================================================*/
