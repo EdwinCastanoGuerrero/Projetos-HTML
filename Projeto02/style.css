@@ -220,7 +220,7 @@ section {
     border: none;
     color: #202020;
     border-radius: 7px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     font-weight: bolder;
     background-color: #ffffff10;
     font-family: 'Poppins', sans-serif;
@@ -241,7 +241,7 @@ section {
     font-size: medium;
     font-weight: bolder;
     border-radius: 7px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     background-color: #000000c9;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
