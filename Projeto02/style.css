@@ -184,6 +184,43 @@ section {
         display: none;
     }
 
+    header .navigation.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1,1,1, 0.5);
+    }
+    header .navigation-itens a {
+        color: #000;
+        font-size: 1em;
+        margin: 15px;
+    }
+
+    header .navigation-itens a::before{
+        background: #222;
+        height: 5px;
+
+    }
+
+    header .navigation-itens {
+        background-color: lightgrey;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 6px;
+        box-shadow: 0 px 5px 25px rgb(1 1 1 / 20%);
+
+    }
+    
     header .login {
         display: none;
     }
@@ -192,22 +229,26 @@ section {
         display: none;
     }
 
-    header .toggle-button {
+    .menu-btn{
         position: absolute;
         top: 2em;
         right: 1em;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
+        background: url(imagens/menu.png) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
     }
 
-    header .toggle-button .bar {
-        height: 4px;
-        width: 100%;
-        background-color: #202020;
-        border-radius: 30px;
+    .menu-btn.active {
+        z-index: 999;
+        background: url(imagens/close.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
     }
 
     section .content {
@@ -230,6 +271,43 @@ section {
         display: none;
     }
 
+    header .navigation.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1,1,1, 0.5);
+    }
+    header .navigation-itens a {
+        color: #000;
+        font-size: 1em;
+        margin: 15px;
+    }
+
+    header .navigation-itens a::before{
+        background: #222;
+        height: 5px;
+
+    }
+
+    header .navigation-itens {
+        background-color: lightgrey;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 6px;
+        box-shadow: 0 px 5px 25px rgb(1 1 1 / 20%);
+
+    }
+    
     header .login {
         display: none;
     }
@@ -238,7 +316,7 @@ section {
         display: none;
     }
 
-    header .toggle-button {
+    .menu-btn{
         position: absolute;
         top: 2em;
         right: 1em;
@@ -247,15 +325,35 @@ section {
         justify-content: space-between;
         width: 30px;
         height: 21px;
+        cursor: pointer;
+        transition: 0.3s ease;
     }
-
-    header .toggle-button .bar {
+    .menu-btn .bar{
         height: 4px;
         width: 100%;
         background-color: #202020;
         border-radius: 30px;
     }
 
+    .menu-btn.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu-btn.active .bar:nth-child(1){
+        z-index: 999;
+        transform: translateY(8px) rotate(45deg);
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+    .menu-btn.active .bar:nth-child(3){
+        z-index: 999;
+        transform: translateY(-8px) rotate(-45deg);
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+
+    }
     section .content {
         width: 267px;
         height: 536px;
@@ -293,7 +391,7 @@ section {
         color: #000000;
 
     }
-}
+
 
 /*===================Icons Login=============================*/
 .btn {

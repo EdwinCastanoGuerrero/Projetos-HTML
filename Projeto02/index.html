@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
-    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -18,18 +17,18 @@
     <header>
         <div class="logo">Lis Style</div>
 
-        <!--<div class="menu-btn">
-            <span id="iconemen"class="material-symbols-outlined">
-                menu
-            </span>
-        </div>-->
+       <div class="menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </div>
         
-        <a href="#" class="toggle-button">
+         <!--<a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
             
-        </a>
+        </a>-->
 
         <div class="navigation">
             <div class="navigation-itens">
@@ -62,7 +61,16 @@
 
     </section>
 
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        //Javacript for responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navigation.classList.toggle("active");
+        });
+    </script>
 
     <footer>
         <!--<div class="rodape">Lis Style</div>-->
