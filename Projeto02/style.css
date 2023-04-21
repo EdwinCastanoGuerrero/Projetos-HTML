@@ -336,9 +336,11 @@ section {
     }
 
     .menu-btn.active .bar:nth-child(2){
+        background-color: #fff;
         opacity: 0;
     }
     .menu-btn.active .bar:nth-child(1){
+        background-color: #fff;
         z-index: 999;
         transform: translateY(8px) rotate(45deg);
         background-size: 25px;
@@ -346,6 +348,7 @@ section {
         transition: 0.3s ease;
     }
     .menu-btn.active .bar:nth-child(3){
+        background-color: #fff;
         z-index: 999;
         transform: translateY(-8px) rotate(-45deg);
         background-size: 25px;
