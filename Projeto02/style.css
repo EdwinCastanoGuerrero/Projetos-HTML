@@ -13,10 +13,13 @@
 
 /*===================Body=======================================*/
 body {
-    background-image: url(imagens/anel.jpg);
+    background-image: url(imagens/pexels-leah-kelley-1449657.jpg);
     background-size: cover;
     background-position: center;
     font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 /*===================Header=====================================*/
@@ -177,6 +180,7 @@ section {
         padding: 100px 20px;
     }
 
+
 }
 
 @media screen and (min-width:534px) and (max-width:939px) {
@@ -251,19 +255,18 @@ section {
         transition: 0.3s ease;
     }
 
-    section .content {
-        width: 395px;
-        height: 436px;
-
+    section .content{
+        width: 400px;
+        height: 450px;
     }
 
 }
 
 @media screen and (min-width:250px) and (max-width:533px) {
     body {
-        background-image: url(imagens/anel.jpg);
+        background-image: url(imagens/pexels-leah-kelley-1449657.jpg);
         background-size: cover;
-        background-position: bottom right;
+        background-position: center center;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -355,12 +358,13 @@ section {
         background-position: center;
         transition: 0.3s ease;
     }
+    section .content{
+        width: 270px;
+        height: 550px;
+    }
 
     }
-    section .content {
-        width: 267px;
-        height: 536px;
-    }
+
 
     .media-icons {
         display: block;
