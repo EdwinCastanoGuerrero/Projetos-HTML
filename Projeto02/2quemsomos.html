@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .about {
+            width: 100%;
+            padding: 90px 0px;
+            background: url(imagens/pexels-leah-kelley-1449657.jpg)no-repeat;
+            background-size: cover;
+            background-position: left bottom;
+        }
+
+        .main {
+            width: 1130px;
+            max-width: 100%;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about img {
+            height: auto;
+            width: 500px;
+            padding: 2px;
+            margin-top: 50px;
+            margin-right: 0;
+            margin-bottom: 200px;
+            box-shadow: 2px 2px 8px #202020;
+            background-color: #ffffff20;
+            border-radius: 70px;
+        }
+
+        .about-text {
+            height: auto;
+            width: 500px;
+            padding: 30px;
+            margin-top: 50px;
+            margin-left: 40px;
+            margin-bottom: 200px;
+            border-radius: 70px;
+            box-shadow: 2px 2px 8px #202020;
+            background-color: #ffffff60;
+        }
+
+
+        .about-text h1 {
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .about-text p {
+            letter-spacing: 1px;
+            line-height: 20px;
+            font-size: 14px;
+            color: #3b3535;
+        }
+
+        @media screen and (min-width:534px) and (max-width:939px) {
+            body {
+                background: url(imagens/pexels-leah-kelley-1449657.jpg)no-repeat;
+                background-size: cover;
+                background-position: center center;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            header .navigation {
+                display: none;
+            }
+
+            header .navigation.active {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(1, 1, 1, 0.5);
+            }
+
+            header .navigation-itens a {
+                color: #000;
+                font-size: 1em;
+                margin: 15px;
+            }
+
+            header .navigation-itens a::before {
+                background: #222;
+                height: 5px;
+
+            }
+
+            header .navigation-itens {
+                background-color: lightgrey;
+                width: 600px;
+                max-width: 600px;
+                margin: 20px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 6px;
+                box-shadow: 0 px 5px 25px rgb(1 1 1 / 20%);
+
+            }
+
+            header .login {
+                display: none;
+            }
+
+            header .cadastro {
+                display: none;
+            }
+
+            .menu-btn {
+                position: absolute;
+                top: 2em;
+                right: 1em;
+                display: flex;
+                background: url(imagens/menu.png) no-repeat;
+                background-size: 30px;
+                background-position: center;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+
+            .menu-btn.active {
+                z-index: 999;
+                background: url(imagens/close.png)no-repeat;
+                background-size: 25px;
+                background-position: center;
+                transition: 0.3s ease;
+            }
+
+            section .content {
+                width: 400px;
+                height: 450px;
+            }
+
+
+            .main {
+                width: 1130px;
+                max-width: 100%;
+                margin: 0px auto;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .about img {
+                height: auto;
+                width: 400px;
+                padding: 2px;
+                margin-top: 50px;
+                margin-right: 0;
+                box-shadow: 2px 2px 8px #202020;
+                background-color: #ffffff20;
+                border-radius: 70px;
+            }
+
+            .about-text {
+                position: relative;
+                top: -200px;
+                height: auto;
+                width: 400px;
+                padding: 40px;
+                margin-top: 0px;
+                margin-left: -10px;
+                margin-bottom: 40px;
+                border-radius: 70px;
+                box-shadow: 2px 2px 8px #202020;
+                background-color: #ffffff60;
+            }
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Lis Style</div>
+
+        <div class="menu-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="navigation">
+            <div class="navigation-itens">
+                <a href="index.html">Home</a>
+                <a href="quemsomos.html">Quem somos?</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="#">Personalizados</a>
+                <a href="#">Contatos</a>
+            </div>
+        </div>
+
+
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="cadastro">Cadastro</button>
+
+        </div>
+    </header>
+    <section class="about">
+        <div class="main">
+            <div class="imagem"><img src="imagens/Screenshot_20230427-233140_Instagram~2.jpg" alt="Lis Maria"></div>
+            <div class="about-text">
+                <h1>Quem somos?</h1>
+                <p>Eu sou uma pessoa apaixonada por joias e prata. Desde criança, eu me encantei com as
+                    peças que minha avó
+                    usava, e desde então, desenvolvi um amor por esses acessórios.</p><br>
+                <p>Além disso, sei que as joias de prata são versáteis e combinam com diferentes roupas e
+                    estilos. Por isso,
+                    tenho uma coleção diversificada, desde brincos, colares, anéis e pulseiras, que me permitem criar
+                    diferentes looks.</p> <br>
+
+                <p>Cuido com muito carinho de minhas joias, pois sei que cada uma delas é uma obra de arte
+                    e um tesouro a
+                    ser preservado. Para mim, as joias são muito mais do que um simples adorno, são um símbolo de minha
+                    história de vida e uma forma de expressar minha personalidade com elegância.</p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        //Javacript for responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+    </script>
+
+    <footer>
+        <!--<div class="rodape">Lis Style</div>-->
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

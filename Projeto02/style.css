@@ -181,6 +181,8 @@ section {
 }
 
 
+
+
 @media (max-width:1298px) {
 
     header {
@@ -276,6 +278,7 @@ section {
         width: 400px;
         height: 450px;
     }
+    
 
 }
 
@@ -471,6 +474,7 @@ section {
 
 
 footer {
+    position: static;
     background-color: #ffffff10;
     box-shadow: 1px 1px 6px #202020c0;
 }
