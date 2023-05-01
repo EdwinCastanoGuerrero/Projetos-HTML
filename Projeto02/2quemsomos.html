@@ -191,6 +191,147 @@
 
 
         }
+
+        @media screen and (min-width:250px) and (max-width:533px) {
+            body {
+                background-image: url(imagens/pexels-leah-kelley-1449657.jpg);
+                background-size: cover;
+                background-position: center center;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            header .navigation {
+                display: none;
+            }
+
+            header .navigation.active {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(1, 1, 1, 0.5);
+            }
+
+            header .navigation-itens a {
+                color: #000;
+                font-size: 1em;
+                margin: 15px;
+            }
+
+            header .navigation-itens a::before {
+                background: #222;
+                height: 5px;
+
+            }
+
+            header .navigation-itens {
+                background-color: lightgrey;
+                width: 600px;
+                max-width: 600px;
+                margin: 20px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 6px;
+                box-shadow: 0 px 5px 25px rgb(1 1 1 / 20%);
+
+            }
+
+            header .login {
+                display: none;
+            }
+
+            header .cadastro {
+                display: none;
+            }
+
+            .menu-btn {
+                position: absolute;
+                top: 2em;
+                right: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 30px;
+                height: 21px;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+
+            .menu-btn .bar {
+                height: 4px;
+                width: 100%;
+                background-color: #202020;
+                border-radius: 30px;
+            }
+
+            .menu-btn.active .bar:nth-child(2) {
+                background-color: #fff;
+                opacity: 0;
+            }
+
+            .menu-btn.active .bar:nth-child(1) {
+                background-color: #fff;
+                z-index: 999;
+                transform: translateY(8px) rotate(45deg);
+                background-size: 25px;
+                background-position: center;
+                transition: 0.3s ease;
+            }
+
+            .menu-btn.active .bar:nth-child(3) {
+                background-color: #fff;
+                z-index: 999;
+                transform: translateY(-8px) rotate(-45deg);
+                background-size: 25px;
+                background-position: center;
+                transition: 0.3s ease;
+            }
+
+            section .content {
+                width: 200px;
+                height: 700px;
+            }
+            .main {
+                width: 1130px;
+                max-width: 100%;
+                margin: 0px auto;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .about img {
+                height: auto;
+                width: 300px;
+                padding: 2px;
+                margin-top: 50px;
+                margin-right: 0;
+                box-shadow: 2px 2px 8px #202020;
+                background-color: #ffffff20;
+                border-radius: 70px;
+            }
+
+            .about-text {
+                position: relative;
+                top: -200px;
+                height: auto;
+                width: 300px;
+                padding: 40px;
+                margin-top: 0px;
+                margin-left: -10px;
+                margin-bottom: 40px;
+                border-radius: 70px;
+                box-shadow: 2px 2px 8px #202020;
+                background-color: #ffffff60;
+            }
+
+        }
     </style>
 </head>
 
@@ -226,7 +367,7 @@
             <div class="imagem"><img src="imagens/Screenshot_20230427-233140_Instagram~2.jpg" alt="Lis Maria"></div>
             <div class="about-text">
                 <h1>Quem somos?</h1>
-                <p>Eu sou uma pessoa apaixonada por joias e prata. Desde criança, eu me encantei com as
+                <p>Eu sou uma pessoa apaixonada por joias e pratas. Desde criança, eu me encantei com as
                     peças que minha avó
                     usava, e desde então, desenvolvi um amor por esses acessórios.</p><br>
                 <p>Além disso, sei que as joias de prata são versáteis e combinam com diferentes roupas e
